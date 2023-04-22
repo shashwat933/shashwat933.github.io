@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif Hebrew', serif;
+    height: 100vh;
+    position: relative;
+}
+
+.phone {
+    display: none;
+
+}
+
+.navBar {
+
+    background-color: rgb(7, 144, 7);
+    padding: 20px 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+    width: 20rem;
+}
+
+.topMenu {
+
+    padding: 0 80px;
+    width: 40rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topMenu li a {
+    font-family: 'Noto Serif Hebrew', serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+main {
+    z-index: -1;
+    padding-left: 40px;
+    padding-right: 60px;
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    /* justify-content: space-between; */
+}
+
+.content {
+    z-index: -1;
+    color: green;
+    width: 50%;
+    padding-right: 4rem;
+
+    position: relative;
+    text-align: center;
+
+}
+
+.content h1 {
+    font-size: 5rem;
+}
+
+
+.content p {
+    /* align-items: justify; */
+    text-align: justify;
+    padding: 2rem;
+    font-size: 1.75rem;
+}
+
+.content button {
+    background-color: green;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 25px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Noto Serif Hebrew', serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.content img {
+    z-index: -201;
+    position: absolute;
+
+    left: 13vw; 
+    top: 10%;
+    opacity: 0.2;
+    height: 30rem;
+
+}
+
+
+.image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.image img {
+
+    width: 100%;
+}
+
+footer {
+
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(7, 144, 7);
+    width: 100%;
+
+    bottom: 0;
+}
+
+footer p {
+    color: rgb(1, 66, 1);
+    padding: 10px 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .navBar {
+        padding: 20px 1rem;
+    }
+
+    .topMenu {
+        padding: 0 40px;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+
+
+    .content {
+
+        padding-right: 1rem;
+
+
+
+    }
+
+    .content h1 {
+        font-size: 3.5rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+
+    .content img {
+
+
+        height: 20rem;
+
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .headerPc {
+        display: none;
+
+    }
+
+    .phone {
+        display: block;
+        z-index: -1;
+    }
+
+    .navBar {
+        z-index: -1;
+        justify-content: center;
+
+    }
+
+    footer {
+
+        text-align: center;
+
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(7, 144, 7);
+        width: 100%;
+
+        bottom: 0;
+    }
+
+    .icon {
+
+        padding: 34px 20px;
+        position: absolute;
+        display: block;
+    }
+
+    .icon div {
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+
+    }
+
+    .icon:hover {
+        background-color: green;
+        cursor: pointer;
+    }
+
+    .PhoneMenu {
+        /* display: none; */
+        box-shadow: 2px 2px 5px green;
+        position: fixed;
+        top: 0;
+        left: -10000px;
+        z-index: 2000;
+        height: 100vh;
+        background-color: white;
+
+    }
+
+    .topMenu {
+
+        width: 50vw;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: start;
+        align-items: start;
+
+    }
+
+    .topMenu li {
+        padding: 20px 0px;
+        display: block;
+        width: 90%;
+    }
+
+    .topMenu>li:hover {
+        background-color: #cccccc;
+        cursor: pointer;
+    }
+
+    .topMenu li a {
+        display: block;
+        padding: 0 10px;
+        font-family: 'Noto Serif Hebrew', serif;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: green;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Socialicons {
+
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+   
+
+    #slide {
+        /* position: a; */
+        top: 0;
+        animation: slide 0.5s forwards;
+
+    }
+
+    @keyframes slide {
+        100% {
+            left: 0;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    main {
+        flex-direction: column;
+        padding: 4rem 20px;
+    }
+
+    main .content {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    main .image {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+
+        text-align: center;
+        position: relative;
+
+        background-color: rgb(7, 144, 7);
+        width: 100%;
+
+        bottom: 0;
+    }
+
+    .content img {
+
+        top: 1%;
+        left: 33%;
+
+        height: 20rem;
+
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .logo {
+
+        width: 15rem;
+    }
+
+    .content p {
+        text-align: center;
+    }
+
+    .content img {
+
+        top: 10%;
+        left: 20%;
+
+        height: 15rem;
+
+    }
+
+    .icon {
+
+        padding: 28px 20px;
+
+    }
+
+    .topMenu li a {
+        
+        font-size: 1rem;
+       
+    }
+    .close{
+        font-size: 130px;
+    }
+    .icon div {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 5px 0;
+
+    }
+}
